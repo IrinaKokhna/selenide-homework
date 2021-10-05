@@ -17,9 +17,9 @@ public class HomeworkWithPageObjects {
         registrationFormPages.openPage();
         registrationFormPages.setFirstName(first_name);
         registrationFormPages.setLastName(last_name);
-        registrationFormPages.setEmail();
+        registrationFormPages.setEmail(userEmail);
         registrationFormPages.setCheckbox();
-        registrationFormPages.setPhone();
+        registrationFormPages.setPhone(phone_number);
         scrolling();
         registrationFormPages.calendarComponent.setDate("09","January","1990");
         registrationFormPages.setHobbies();

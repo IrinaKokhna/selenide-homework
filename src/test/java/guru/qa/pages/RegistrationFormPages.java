@@ -1,5 +1,6 @@
 package guru.qa.pages;
 
+import com.github.javafaker.PhoneNumber;
 import guru.qa.pages.components.CalendarComponent;
 import org.openqa.selenium.By;
 
@@ -26,14 +27,14 @@ public class RegistrationFormPages {
     public void setLastName(String lastName) {
         $("#lastName").setValue(lastName);
     }
-    public void setEmail() {
+    public void setEmail(String userEmail) {
         $("#userEmail").setValue(userEmail);
     }
     public void setCheckbox() {
         $(byText("Female")).click();
     }
-    public void setPhone() {
-        $("#userNumber").setValue(phone_number);
+    public void setPhone(String phoneNumber) {
+        $("#userNumber").setValue(phoneNumber);
     }
     public void setHobbies() {
         $(By.xpath("//*[@id=\"subjectsInput\"]")).setValue("Maths").pressEnter();
