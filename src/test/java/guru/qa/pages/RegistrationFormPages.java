@@ -1,6 +1,5 @@
 package guru.qa.pages;
 
-import com.github.javafaker.Faker;
 import guru.qa.pages.components.CalendarComponent;
 import org.openqa.selenium.By;
 
@@ -20,9 +19,12 @@ public class RegistrationFormPages {
 
         open("https://demoqa.com/automation-practice-form");
     }
-    public void setName() {
-        $("#firstName").setValue(first_name);
-        $("#lastName").setValue(last_name);
+
+    public void setFirstName(String firstName){
+        $("#firstName").setValue(firstName);
+    }
+    public void setLastName(String lastName) {
+        $("#lastName").setValue(lastName);
     }
     public void setEmail() {
         $("#userEmail").setValue(userEmail);
