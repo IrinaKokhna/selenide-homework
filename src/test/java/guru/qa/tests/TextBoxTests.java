@@ -1,6 +1,5 @@
 package guru.qa.tests;
 
-import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -10,9 +9,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class TextBoxTests {
     @BeforeAll
-    static void beforeAll() {
-        Configuration.startMaximized = true;
-    }
 
     @Test
     void fillFormTest() {
