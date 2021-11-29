@@ -21,6 +21,8 @@ public class ParallelTest {
             "tommy cash",
             "justin bieber",
             "rezz"
+            "lady gaga"
+            "tomas mraz"
     })
     @ParameterizedTest
     void youtubeSearch(String searchQuery, TestInfo testInfo) {
