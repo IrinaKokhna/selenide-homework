@@ -1,8 +1,6 @@
 package guru.qa.tests;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -22,7 +20,7 @@ public class SampleLambda {
         });
         step("Поиск результатов по запросу", () -> {
             $(byXpath("//div[@id='container']//input[@id='search']")).sendKeys("katy perry");
-            $(byXpath("//div[@id='container']//input[@id='search']")).submit();
+            $(byXpath("//div[@id='container']//input[@id='search111']")).submit();
         });
         step("Ищем текст на странице с реузльтатами", () -> {
             $(byText("pop icon puts her life")).should(Condition.visible);

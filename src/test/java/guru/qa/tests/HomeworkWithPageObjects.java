@@ -26,5 +26,6 @@ public class HomeworkWithPageObjects {
         registrationFormPages.uploadPic();
         registrationFormPages.setAddress();
         registrationFormPages.assertion();
+        System.out.println("Hello, how are you doing?");
     }
 }
