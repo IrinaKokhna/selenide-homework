@@ -20,6 +20,8 @@ allure {
 }
 
 dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+
     // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
     runtimeOnly group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.7'
     testImplementation('com.codeborne:selenide:6.0.3',
@@ -43,4 +45,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+task testHomework(type: Test){
+    include 'Homework.class'
 }
